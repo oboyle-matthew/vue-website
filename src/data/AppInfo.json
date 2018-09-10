@@ -1,0 +1,58 @@
+{
+  "apps": {
+    "Fact Check": {
+      "info": "This is info about Fact Check",
+      "date": "August 2018 - Present",
+      "language": "Unknown",
+      "repo": "repo"
+    },
+    "Vooga": {
+      "info": "In a team of ten students, wrote a Java program to create a game authoring environment that allows users with no programming skills to build and play 2D video games.",
+      "date": "October 2017 - December 2017",
+      "language": "Java",
+      "repo": "https://github.com/oboyle-matthew/Vooga"
+    },
+    "Offline Map": {
+      "info": "Published an npm module that allows users to create and edit maps without any internet connectivity, instead using overlays of local images.",
+      "date": "June 2018 - August 2018",
+      "language": "Javascript - React.js",
+      "repo": "https://www.npmjs.com/package/react-offline-map"
+    },
+    "Code Quality": {
+      "info": "This is info about Code Quality",
+      "date": "August 2018 - Present",
+      "language": "Javascript - React.js",
+      "repo": "repo"
+    },
+    "Trello": {
+      "info": "This is info about Trello",
+      "date": "e",
+      "language": "Javascript",
+      "repo": "repo"
+    },
+    "Slogo": {
+      "info": "In a team with three other students, provided an IDE (Integrated Development Environment) that supports users to write Logo programs. Mainly in charge of developing the API (Application Programming Interface) for the project.",
+      "date": "October 2017 - November 2017",
+      "language": "Java",
+      "repo": "https://github.com/oboyle-matthew/Slogo"
+    },
+    "xPACE": {
+      "info": "This is info about Vooga",
+      "date": "g",
+      "language": "Javascript - React.js",
+      "repo": "repo"
+    },
+    "Dots": {
+      "info": "Project for Duke Startup Challenge in a team with five other students. Designing a website that helps non-native English speakers to improve their language skills through pronunciation",
+      "date": "September 2017 - January 2018",
+      "language": "Javascript",
+      "repo": "https://www.indiegogo.com/projects/dots-efficiently-learn-foreign-languages#/"
+    },
+    "Cell Society": {
+      "info": "In a team with three other students, wrote a Java program using JavaFX and reading in XML files that animates any 2D grid Cellular Automata simulation. ",
+      "date": "September 2017 - October 2017",
+      "language": "Java",
+      "repo": "repo"
+    }
+  }
+}

@@ -1,60 +1,81 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+    <Person />
+    <Plane />
+    <div v-bind:style="ireland">
+      <WelcomeText/>
+      <Ireland/>
+      <SpeechBubble/>
+    </div>
+    <div v-bind:style="america">
+      <America/>
+    </div>
+    <div v-bind:style="ireland">
+      <America/>
+    </div>
+    <TextFromLeft top="7" text="In 2016 I moved to North Carolina" scroll="6800" />
+    <TextFromAbove left="70" text="To study computer science at Duke University" scroll="7100" />
+    <TextFromBelow left="5" text="My relevant coursework includes" scroll="7500" />
+    <Dots/>
+    <Phone/>
+    <End/>
   </div>
 </template>
 
 <script>
-export default {
+  import Person from './components/Person'
+  import WelcomeText from './components/WelcomeText'
+  import Plane from './components/Plane'
+  import Ireland from './components/Ireland';
+  import SpeechBubble from './components/SpeechBubble';
+  import America from './components/America';
+  import TextFromLeft from './components/TextFromLeft';
+  import TextFromAbove from './components/TextFromAbove';
+  import TextFromBelow from './components/TextFromBelow';
+  import Dots from './components/Dots';
+  import Phone from './components/Phone';
+  import End from './components/End';
+
+
+
+  export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      ireland: {
+        backgroundColor: '#0099ff',
+        height: '850vh'
+      },
+      america: {
+        backgroundColor: 'green',
+        height: '450vh'
+      },
+      welcome: {
+        color: 'white',
+        position: 'absolute',
+        left: 0,
+        right: 0,
+        textAlign: 'center',
+        top: '55vh'
+      }
     }
+  },
+  components: {
+    Person,
+    WelcomeText,
+    Plane,
+    Ireland,
+    SpeechBubble,
+    America,
+    TextFromLeft,
+    TextFromAbove,
+    TextFromBelow,
+    Dots,
+    Phone,
+    End
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>
