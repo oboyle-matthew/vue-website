@@ -36,8 +36,6 @@
   import Phone from './components/Phone';
   import End from './components/End';
 
-
-
   export default {
   name: 'app',
   data () {
@@ -77,5 +75,10 @@
 }
 </script>
 
+
 <style>
+  body {
+    background-color: #0099ff;
+  }
+  * { margin: 0 !important; }
 </style>

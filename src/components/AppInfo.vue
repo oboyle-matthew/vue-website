@@ -5,7 +5,7 @@
       <span v-bind:style="l1Style">Language: </span><span v-bind:style="l2Style">{{language}}</span><br/>
       <span v-bind:style="d1Style">Date: </span><span v-bind:style="d2Style">{{date}}</span>
       <p v-bind:style="infoStyle">{{info}}</p>
-      <a v-bind:href="info" v-bind:style="repoStyle">Repository</a>
+      <a v-bind:href="repo" target="_blank">Repo</a>
     </div>
     <div v-bind:style="rightStyle">
       <h1 v-bind:style="homeStyle">Press the home button to return to other projects</h1>

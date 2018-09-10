@@ -1,6 +1,6 @@
 <template >
   <div v-bind:style="endStyle">
-    <a href="../images/airplane.png">Download</a>
+    <!--<a href="../images/airplane.png">Download</a>-->
     <h1 v-bind:style="thanksStyle">Thanks for visiting my page!</h1>
     <img v-bind:style="gitStyle" src="../images/github.png"/>
     <img v-bind:style="linkedStyle" src="../images/linkedin.png"/>
@@ -53,36 +53,11 @@
         },
         endStyle: {
           position: 'absolute',
+          backgroundColor: '#0099ff',
           top: '2050vh',
           left: 0,
         }
       }
-    },
-    methods: {
-      updateScroll() {
-        var y = window.scrollY * 726 / window.innerHeight;
-        if (y >= 10000 && y < 11500) {
-          this.fadeIn(y-10100);
-        }
-        else if (y >= 11500) {
-          this.fadeOut(y-11500);
-        }
-        else {
-          this.backgroundStyle.display = 'none';
-        }
-      },
-      fadeIn(y) {
-        this.backgroundStyle.display = 'inline';
-        this.backgroundStyle.opacity = (y/500);
-      },
-      fadeOut(y) {
-        this.backgroundStyle.opacity = 1 - (y/10)
-      }
-    },
-
-    mounted() {
-      window.addEventListener('scroll', this.updateScroll);
-      this.updateScroll();
     }
   }
 </script>
